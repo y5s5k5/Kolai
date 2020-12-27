@@ -38,7 +38,7 @@ int main() {
         system("pause");
     }
     DWORD lpFakeBuffer[0x2000] = { 0 };
-    for (size_t i = 0; i < 0x2000; i++)
+    for (size_t i = 0; i < 0x2000/4; i++)
     {
         lpFakeBuffer[i] = 0x01010101;
     }
